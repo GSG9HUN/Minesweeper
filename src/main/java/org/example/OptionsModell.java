@@ -1,22 +1,19 @@
 package org.example;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
-
-
 
 public class OptionsModell {
 
 
+private static String nehezseg="könnyű";
+public String getNehezseg(){
+    return nehezseg;
+}
+   public void setNehezseg(String nehezseg){
+    this.nehezseg=nehezseg;
+       System.out.println(this.nehezseg);
+   }
 
-    @FXML
-    public static ChoiceBox<String> kivalasztas = new ChoiceBox<>();
+public OptionsModell(){
 
-
-    static void setnehezseg(String newnehezseg) {
-
-        kivalasztas.setValue(newnehezseg);
-    }
-
+}
 }

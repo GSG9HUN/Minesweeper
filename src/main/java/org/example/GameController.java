@@ -41,14 +41,14 @@ public class GameController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        gc = img.getGraphicsContext2D();
+         gc = img.getGraphicsContext2D();
         img.setOnMouseClicked(mouseEvent -> {
             switch (mouseEvent.getButton()) {
                 case PRIMARY:
-                    GameModell.handlePrimaryClick(gc, mouseEvent, score, timer);
+                    GameModell.handlePrimaryClick(gc, mouseEvent.getX(),mouseEvent.getY(), score, timer);
                     break;
                 case SECONDARY:
-                    GameModell.handleSecondaryClick(gc, mouseEvent);
+                    GameModell.handleSecondaryClick(gc, mouseEvent.getX(),mouseEvent.getY());
                     break;
             }
         });

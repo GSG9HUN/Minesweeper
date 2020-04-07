@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+import org.tinylog.Logger;
 import java.io.IOException;
 
 /**
@@ -21,12 +21,14 @@ public class App extends Application {
        this.stage = stage;
         scene = new Scene(loadFXML("primary"));
         stage.setScene(scene);
+        Logger.info("Menü elindítva!");
         stage.setResizable(false);
         stage.show();
     }
 
      static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
+        Logger.info(fxml+".fxml betöltve");
         stage.sizeToScene();
 
     }

@@ -1,7 +1,9 @@
 package org.example;
 
-import java.io.IOException;
 import javafx.fxml.FXML;
+import org.tinylog.Logger;
+
+import java.io.IOException;
 
 public class PrimaryController {
 
@@ -11,10 +13,12 @@ public class PrimaryController {
     }
     @FXML
     private void Exit(){
+        Logger.info("Kilépés!");
         System.exit(0);
     }
     @FXML
     private void Options() throws IOException {
+        Logger.info("Nehézség beállítás!");
        App.setRoot("options");
 
     }

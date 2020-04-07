@@ -12,6 +12,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
+import org.tinylog.Logger;
 
 import java.io.IOException;
 import java.util.Random;
@@ -22,7 +23,7 @@ public class GameModell {
     public static String nehezseg;
     public static Image mine;
     public static Image flag;
-    private static int Score =0;
+    private static int Score = 0;
     private static int counter;
 
     static {
@@ -36,132 +37,134 @@ public class GameModell {
     private static boolean[][] bombs;
     private static int[][] neighbours;
     private static boolean[][] flagged;
-    private static boolean [][]revealed;
+    private static boolean[][] revealed;
     private static Random rand = new Random();
-    public static int timer=1;
-    public static int timercounter=0;
-    public static int stop=0;
+    public static int timer = 1;
+    public static int timercounter = 0;
+    public static int stop = 0;
     public static Timeline clock = new Timeline();
-    public static int revealedcounter=1;
+    public static int revealedcounter = 1;
     public static boolean revealed1[][];
 
 
-    public static void howmuchneighbour(){
-                for(int i=1;i<=10;i++)
-         for(int j=1;j<=10;j++)
-         {if(bombs[j][i]){
-             neighbours[i-1][j-1]++;
-             neighbours[i-1][j]++;
-             neighbours[i-1][j+1]++;
-             neighbours[i][j-1]++;
-             neighbours[i][j+1]++;
-             neighbours[i+1][j-1]++;
-             neighbours[i+1][j]++;
-             neighbours[i+1][j+1]++;
-         }
+    public static void howmuchneighbour() {
+        Logger.info("Mezők aknásmezőkkel való szomszédainak meghatározása!");
+        for (int i = 1; i <= 10; i++)
+            for (int j = 1; j <= 10; j++) {
+                if (bombs[j][i]) {
+                    neighbours[i - 1][j - 1]++;
+                    neighbours[i - 1][j]++;
+                    neighbours[i - 1][j + 1]++;
+                    neighbours[i][j - 1]++;
+                    neighbours[i][j + 1]++;
+                    neighbours[i + 1][j - 1]++;
+                    neighbours[i + 1][j]++;
+                    neighbours[i + 1][j + 1]++;
+                }
 
-         }
+            }
     }
 
- static int neighbournumber(int x, int y){
-    int i = 0;
-    if (x == 1 && y == 10) {
-        if (bombs[x][y - 1])
-            i++;
-        if (bombs[x + 1][y - 1])
-            i++;
-        if (bombs[x + 1][y])
-            i++;
-    } else if (x == 10 && y == 1) {
-        if (bombs[x][y + 1])
-            i++;
-        if (bombs[x - 1][y + 1])
-            i++;
-        if (bombs[x - 1][y])
-            i++;
-    } else if (x == 1 && y == 1) {
-        if (bombs[x][y + 1])
-            i++;
-        if (bombs[x + 1][y + 1])
-            i++;
-        if (bombs[x + 1][y])
-            i++;
-    } else if (x == 10 && y == 10) {
-        if (bombs[x][y - 1])
-            i++;
-        if (bombs[x - 1][y - 1])
-            i++;
-        if (bombs[x - 1][y])
-            i++;
-    } else if (x == 10 && y != 1) {
+    static int neighbournumber(int x, int y) {
+        int i = 0;
+        if (x == 1 && y == 10) {
+            if (bombs[x][y - 1])
+                i++;
+            if (bombs[x + 1][y - 1])
+                i++;
+            if (bombs[x + 1][y])
+                i++;
+        } else if (x == 10 && y == 1) {
+            if (bombs[x][y + 1])
+                i++;
+            if (bombs[x - 1][y + 1])
+                i++;
+            if (bombs[x - 1][y])
+                i++;
+        } else if (x == 1 && y == 1) {
+            if (bombs[x][y + 1])
+                i++;
+            if (bombs[x + 1][y + 1])
+                i++;
+            if (bombs[x + 1][y])
+                i++;
+        } else if (x == 10 && y == 10) {
+            if (bombs[x][y - 1])
+                i++;
+            if (bombs[x - 1][y - 1])
+                i++;
+            if (bombs[x - 1][y])
+                i++;
+        } else if (x == 10 && y != 1) {
 
-        if (bombs[x][y - 1])
-            i++;
-        if (bombs[x][y + 1])
-            i++;
-        if (bombs[x - 1][y - 1])
-            i++;
-        if (bombs[x - 1][y + 1])
-            i++;
-        if (bombs[x - 1][y])
-            i++;
-    } else if (x != 1 && y == 10) {
+            if (bombs[x][y - 1])
+                i++;
+            if (bombs[x][y + 1])
+                i++;
+            if (bombs[x - 1][y - 1])
+                i++;
+            if (bombs[x - 1][y + 1])
+                i++;
+            if (bombs[x - 1][y])
+                i++;
+        } else if (x != 1 && y == 10) {
 
-        if (bombs[x][y - 1])
-            i++;
-        if (bombs[x + 1][y - 1])
-            i++;
-        if (bombs[x - 1][y - 1])
-            i++;
-        if (bombs[x - 1][y])
-            i++;
-        if (bombs[x + 1][y])
-            i++;
-    } else if(x==1 && y!=10){
-        if (bombs[x][y - 1])
-            i++;
-        if (bombs[x][y + 1])
-            i++;
-        if (bombs[x+1][y - 1])
-            i++;
-        if (bombs[x+1][y])
-            i++;
-        if (bombs[x+1][y + 1])
-            i++;
-    }else if(y==1 && x!=10){
-        if (bombs[x+1][y])
-            i++;
-        if (bombs[x-1][y])
-            i++;
-        if (bombs[x+1][y+1])
-            i++;
-        if (bombs[x-1][y+1])
-            i++;
-        if (bombs[x][y + 1])
-            i++;
-    }else {
-        if (bombs[x - 1][y - 1])
-            i++;
-        if (bombs[x - 1][y])
-            i++;
-        if (bombs[x - 1][y + 1])
-            i++;
-        if (bombs[x][y - 1])
-            i++;
-        if (bombs[x][y + 1])
-            i++;
-        if (bombs[x + 1][y - 1])
-            i++;
-        if (bombs[x + 1][y])
-            i++;
-        if (bombs[x + 1][y + 1])
-            i++;
+            if (bombs[x][y - 1])
+                i++;
+            if (bombs[x + 1][y - 1])
+                i++;
+            if (bombs[x - 1][y - 1])
+                i++;
+            if (bombs[x - 1][y])
+                i++;
+            if (bombs[x + 1][y])
+                i++;
+        } else if (x == 1 && y != 10) {
+            if (bombs[x][y - 1])
+                i++;
+            if (bombs[x][y + 1])
+                i++;
+            if (bombs[x + 1][y - 1])
+                i++;
+            if (bombs[x + 1][y])
+                i++;
+            if (bombs[x + 1][y + 1])
+                i++;
+        } else if (y == 1 && x != 10) {
+            if (bombs[x + 1][y])
+                i++;
+            if (bombs[x - 1][y])
+                i++;
+            if (bombs[x + 1][y + 1])
+                i++;
+            if (bombs[x - 1][y + 1])
+                i++;
+            if (bombs[x][y + 1])
+                i++;
+        } else {
+            if (bombs[x - 1][y - 1])
+                i++;
+            if (bombs[x - 1][y])
+                i++;
+            if (bombs[x - 1][y + 1])
+                i++;
+            if (bombs[x][y - 1])
+                i++;
+            if (bombs[x][y + 1])
+                i++;
+            if (bombs[x + 1][y - 1])
+                i++;
+            if (bombs[x + 1][y])
+                i++;
+            if (bombs[x + 1][y + 1])
+                i++;
+        }
+        return i;
     }
-    return i;
-}
+
     public static void neighbour(int x, int y, GraphicsContext gc) {
 
-        int szam=neighbournumber(x,y);
+        int szam = neighbournumber(x, y);
         if (szam > 0) {
             switch (szam) {
                 case 1:
@@ -190,116 +193,127 @@ public class GameModell {
                     break;
 
             }
-            if(revealed[x-1][y-1]==false) {
+            if (revealed[x - 1][y - 1] == false) {
                 gc.fillRect(GameController.spacing + (x - 1) * 50, GameController.spacing + (y - 1) * 50 + 50, 50 - 2 * GameController.spacing, 50 - 2 * GameController.spacing);
-                revealed[x-1][y-1] = true;
+                revealed[x - 1][y - 1] = true;
                 revealed1[x][y] = true;
+                Logger.info(x + " " + y + " Mező felfordítása!");
                 gc.strokeText(String.valueOf(szam), GameController.spacing + (x - 1) * 50 + 20, GameController.spacing + (y - 1) * 50 + 50 + 20);
-                Score+=10;
+                Score += 10;
             }
-        }else {
-            while (szam == 0 && revealed[x-1][y-1]==false) {
+        } else {
+            while (szam == 0 && revealed[x - 1][y - 1] == false) {
 
 
-            gc.setFill(Color.GRAY);
-            revealed[x-1][y-1]=true;
-            revealed1[x][y] = true;
-            gc.fillRect(GameController.spacing + (x - 1) * 50, GameController.spacing + (y - 1) * 50 + 50, 50 - 2 * GameController.spacing, 50 - 2 * GameController.spacing);
-            Score+=10;
+                gc.setFill(Color.GRAY);
+                revealed[x - 1][y - 1] = true;
+                revealed1[x][y] = true;
+                Logger.info(x + " " + y + " Mező felfordítása!");
+                gc.fillRect(GameController.spacing + (x - 1) * 50, GameController.spacing + (y - 1) * 50 + 50, 50 - 2 * GameController.spacing, 50 - 2 * GameController.spacing);
+                Score += 10;
 
-            if (x == 1 && y == 10) {
-                neighbour(x,y-1, gc);
-                neighbour(x+1,y-1, gc);
-                neighbour(x+1,y, gc);
-                break;
-            } else if (x == 10 && y == 1) {
-                neighbour(x,y+1, gc);
-                neighbour(x-1,y+1, gc);
-                neighbour(x-1,y, gc);
-                break;
-            } else if (x == 1 && y == 1) {
-                neighbour(x,y+1, gc);
-                neighbour(x+1,y+1, gc);
-                neighbour(x+1,y, gc);
-                break;
-            } else if (x == 10 && y == 10) {
-                neighbour(x,y-1, gc);
-                neighbour(x-1,y-1, gc);
-                neighbour(x-1,y, gc);
-                break;
+                if (x == 1 && y == 10) {
+                    neighbour(x, y - 1, gc);
+                    neighbour(x + 1, y - 1, gc);
+                    neighbour(x + 1, y, gc);
+                    break;
+                } else if (x == 10 && y == 1) {
+                    neighbour(x, y + 1, gc);
+                    neighbour(x - 1, y + 1, gc);
+                    neighbour(x - 1, y, gc);
+                    break;
+                } else if (x == 1 && y == 1) {
+                    neighbour(x, y + 1, gc);
+                    neighbour(x + 1, y + 1, gc);
+                    neighbour(x + 1, y, gc);
+                    break;
+                } else if (x == 10 && y == 10) {
+                    neighbour(x, y - 1, gc);
+                    neighbour(x - 1, y - 1, gc);
+                    neighbour(x - 1, y, gc);
+                    break;
 
-            } else if (x == 10 && y != 1) {
-                neighbour(x,y-1, gc);
-                neighbour(x,y+1, gc);
-                neighbour(x-1,y-1, gc);
-                neighbour(x-1,y, gc);
-                neighbour(x-1,y+1, gc);
-                break;
-            } else if (x != 1 && y == 10) {
-                neighbour(x,y-1, gc);
-                neighbour(x-1,y-1, gc);
-                neighbour(x-1,y, gc);
-                neighbour(x+1,y-1, gc);
-                neighbour(x+1,y, gc);
-                break;
-            } else if(x==1 && y!=10){
-                neighbour(x,y-1, gc);
-                neighbour(x,y+1, gc);
-                neighbour(x+1,y-1, gc);
-                neighbour(x+1,y, gc);
-                neighbour(x+1,y+1, gc);
-                break;
-            }else if(y==1 && x!=10){
-                neighbour(x+1,y, gc);
-                neighbour(x-1,y, gc);
-                neighbour(x+1,y+1, gc);
-                neighbour(x-1,y+1, gc);
-                neighbour(x,y+1, gc);
-                break;
-            }else if(y>1 && x<10 && y<10 && x>1){
-                neighbour(x-1,y-1, gc);
-                neighbour(x-1,y, gc);
-                neighbour(x-1,y+1, gc);
-                neighbour(x,y-1, gc);
-                neighbour(x,y+1, gc);
-                neighbour(x+1,y-1, gc);
-                neighbour(x+1,y, gc);
-                neighbour(x+1,y+1, gc);
-                break;
-            }else{break;}
+                } else if (x == 10 && y != 1) {
+                    neighbour(x, y - 1, gc);
+                    neighbour(x, y + 1, gc);
+                    neighbour(x - 1, y - 1, gc);
+                    neighbour(x - 1, y, gc);
+                    neighbour(x - 1, y + 1, gc);
+                    break;
+                } else if (x != 1 && y == 10) {
+                    neighbour(x, y - 1, gc);
+                    neighbour(x - 1, y - 1, gc);
+                    neighbour(x - 1, y, gc);
+                    neighbour(x + 1, y - 1, gc);
+                    neighbour(x + 1, y, gc);
+                    break;
+                } else if (x == 1 && y != 10) {
+                    neighbour(x, y - 1, gc);
+                    neighbour(x, y + 1, gc);
+                    neighbour(x + 1, y - 1, gc);
+                    neighbour(x + 1, y, gc);
+                    neighbour(x + 1, y + 1, gc);
+                    break;
+                } else if (y == 1 && x != 10) {
+                    neighbour(x + 1, y, gc);
+                    neighbour(x - 1, y, gc);
+                    neighbour(x + 1, y + 1, gc);
+                    neighbour(x - 1, y + 1, gc);
+                    neighbour(x, y + 1, gc);
+                    break;
+                } else if (y > 1 && x < 10 && y < 10 && x > 1) {
+                    neighbour(x - 1, y - 1, gc);
+                    neighbour(x - 1, y, gc);
+                    neighbour(x - 1, y + 1, gc);
+                    neighbour(x, y - 1, gc);
+                    neighbour(x, y + 1, gc);
+                    neighbour(x + 1, y - 1, gc);
+                    neighbour(x + 1, y, gc);
+                    neighbour(x + 1, y + 1, gc);
+                    break;
+                } else {
+                    break;
+                }
 
-    }}}
+            }
+        }
+    }
 
     public static void handleSecondaryClick(GraphicsContext gc, MouseEvent mouseEvent) {
 
         mx = (int) mouseEvent.getX();
         my = (int) mouseEvent.getY();
         if (inboxX() > -1 && inboxY() > -1) {
-            if (!flagged[inboxX()-1][inboxY()-1] && revealed[inboxX()-1][inboxY()-1]==false) {
+            if (!flagged[inboxX() - 1][inboxY() - 1] && revealed[inboxX() - 1][inboxY() - 1] == false) {
                 gc.drawImage(flag, (GameController.spacing + (inboxX() - 1) * 50) + 2, (GameController.spacing + (inboxY() - 1) * 50 + 50) + 2);
-                flagged[inboxX()-1][inboxY()-1] = true;
-            } else if(revealed[inboxX()-1][inboxY()-1]==false){
+                Logger.info("Flag lehelyetése!");
+                flagged[inboxX() - 1][inboxY() - 1] = true;
+            } else if (revealed[inboxX() - 1][inboxY() - 1] == false) {
                 gc.setFill(Color.BLACK);
+                Logger.info("Flag felvétele!");
                 gc.fillRect(GameController.spacing + (inboxX() - 1) * 50, GameController.spacing + (inboxY() - 1) * 50 + 50, 50 - 2 * GameController.spacing, 50 - 2 * GameController.spacing);
-                flagged[inboxX()-1][inboxY()-1] = false;
+                flagged[inboxX() - 1][inboxY() - 1] = false;
             }
 
 
         }
     }
-    public static void set_to_zero(){
+
+    public static void set_to_zero() {
         for (int row = 1; row <= 10; row++)
             for (int collom = 1; collom <= 10; collom++) {
                 bombs[row][collom] = false;
                 flagged[row][collom] = false;
-                neighbours[row][collom]=0;
-                revealed[row][collom]=false;
-                revealed1[row][collom]=false;
+                neighbours[row][collom] = 0;
+                revealed[row][collom] = false;
+                revealed1[row][collom] = false;
+
             }
-
+        Logger.info("Újra kezdés!");
     }
-    public static void BombGenerate(String nehezseg) {
 
+    public static void BombGenerate(String nehezseg) {
+        Logger.info("Aknák elhelyezése a pályán!");
         if (nehezseg.equals("könnyű")) {
 
             bombs = new boolean[11][11];
@@ -313,9 +327,9 @@ public class GameModell {
                 for (int collom = 1; collom <= 10; collom++) {
                     bombs[row][collom] = false;
                     flagged[row][collom] = false;
-                    neighbours[row][collom]=0;
-                    revealed[row][collom]=false;
-                    revealed1[row][collom]=false;
+                    neighbours[row][collom] = 0;
+                    revealed[row][collom] = false;
+                    revealed1[row][collom] = false;
                 }
 
 
@@ -325,7 +339,7 @@ public class GameModell {
 
                     if (bombs[random1][random2] != true) {
                         bombs[random1][random2] = true;
-                        revealed1[random1][random2]=true;
+                        revealed1[random1][random2] = true;
                         i++;
                     }
                 }
@@ -371,8 +385,10 @@ public class GameModell {
 
     GameModell() {
     }
+
     static Alert alert = new Alert(Alert.AlertType.WARNING);
     static Alert alertwin = new Alert(Alert.AlertType.WARNING);
+
     GameModell(String username, String nehezseg) throws IOException {
 
         this.username = username;
@@ -390,51 +406,53 @@ public class GameModell {
         alertwin.setContentText("Gratulálok megtaláltad az összes aknát!");
 
     }
-    public static void restart(GraphicsContext gc, Label timer, Label score){
-        revealedcounter=1;
-        if(counter>0){
+
+    public static void restart(GraphicsContext gc, Label timer, Label score) {
+        revealedcounter = 1;
+        if (counter > 0) {
             set_to_zero();
         }
         gc.setFill(Color.BLACK);
-        if(GameModell.nehezseg.equals("könnyű"))
-        {
-            for(int i=0;i<10;i++)
-                for(int j=0;j<10;j++)
-                    gc.fillRect(GameController.spacing+i*50,GameController.spacing+j*50+50,50-2*GameController.spacing,50-2*GameController.spacing);
+        if (GameModell.nehezseg.equals("könnyű")) {
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                    gc.fillRect(GameController.spacing + i * 50, GameController.spacing + j * 50 + 50, 50 - 2 * GameController.spacing, 50 - 2 * GameController.spacing);
         }
         BombGenerate(nehezseg);
         howmuchneighbour();
-        Score =0;
+        Score = 0;
         timer.setText("Timer: 0. s");
         score.setText("Score: 0");
-        GameModell.timer=1;
-        timercounter=0;
+        GameModell.timer = 1;
+        timercounter = 0;
         stop++;
-        if(stop>0){
+        if (stop > 0) {
             clock.stop();
-            stop=0;
+            stop = 0;
         }
     }
 
     public static void handlePrimaryClick(GraphicsContext gc, MouseEvent event, Label score, Label timer) {
         mx = (int) event.getX();
         my = (int) event.getY();
-        if(timercounter==0){
+        if (timercounter == 0) {
             clock = new Timeline(new KeyFrame(Duration.seconds(1), new EventHandler<ActionEvent>() {
 
                 @Override
                 public void handle(ActionEvent event) {
-                    timer.setText("Timer: "+Integer.toString(GameModell.timer)+". s");
+
+                    timer.setText("Timer: " + Integer.toString(GameModell.timer) + ". s");
                     GameModell.timer++;
 
                 }
             }));
             clock.setCycleCount(Timeline.INDEFINITE);
             clock.play();
+            Logger.info("Óra elindult!");
 
 
         }
-        timercounter=1;
+        timercounter = 1;
         if (inboxX() > -1 && inboxY() > -1) {
             if (bombs[inboxX()][inboxY()]) {
                 gc.setFill(Color.RED);
@@ -446,35 +464,35 @@ public class GameModell {
 
 
                         }
+                Logger.info("Aknára klikkelt!");
                 alert.showAndWait();
                 clock.stop();
-                restart(gc,timer,score);
+                restart(gc, timer, score);
             } else {
-                if (!flagged[inboxX()-1][inboxY()-1] && revealed[inboxX()-1][inboxY()-1]==false) {
+                if (!flagged[inboxX() - 1][inboxY() - 1] && revealed[inboxX() - 1][inboxY() - 1] == false) {
 
                     gc.setFill(Color.GRAY);
                     gc.fillRect(GameController.spacing + (inboxX() - 1) * 50, GameController.spacing + (inboxY() - 1) * 50 + 50, 50 - 2 * GameController.spacing, 50 - 2 * GameController.spacing);
-                   neighbour(inboxX(),inboxY(), gc);
-                   score.setText("Score: "+Integer.toString(Score));
-                   for(int i=1;i<=10;i++)
-                       for(int j=1;j<=10;j++)
-                       {if(revealed1[i][j]==true){
-                       revealedcounter++;
+                    neighbour(inboxX(), inboxY(), gc);
+                    score.setText("Score: " + Integer.toString(Score));
+                    for (int i = 1; i <= 10; i++)
+                        for (int j = 1; j <= 10; j++) {
+                            if (revealed1[i][j] == true) {
+                                revealedcounter++;
 
-                   }}
+                            }
+                        }
 
 
-                    if(revealedcounter>100){
+                    if (revealedcounter > 100) {
                         alertwin.showAndWait();
-                        restart(gc,timer,score);
+                        restart(gc, timer, score);
                     }
-                    revealedcounter=1;
-                    }
+                    revealedcounter = 1;
                 }
             }
         }
-
-
+    }
 
 
     public static int inboxX() {

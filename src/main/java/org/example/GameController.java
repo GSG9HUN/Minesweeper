@@ -16,6 +16,9 @@ import java.util.ResourceBundle;
 public class GameController implements Initializable {
 
 
+    private static GameModell game;
+    private static GameView gameView;
+    private static GameController gamecontroller;
     @FXML
     public Canvas img;
     @FXML
@@ -25,9 +28,10 @@ public class GameController implements Initializable {
     public GraphicsContext gc;
     String nehezseg = new String();
     String username = new String();
-    public static int mx = -1000;
-    public static int my = -1000;
-    public static int szam = 0;
+    public int mx = -1000;
+    public int my = -1000;
+    public int szam = 0;
+
 
     public GameController() {
 
@@ -38,14 +42,21 @@ public class GameController implements Initializable {
 
         this.nehezseg = nehezseg;
         this.username = username;
-        new GameModell(username, nehezseg);
-    }
+        gamecontroller = new GameController();
+        game = new GameModell(username, this.nehezseg);
+        game.setSpacing(5);
 
+
+    }
+    void setTime(int value){
+        game.setTime(value);
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         gc = img.getGraphicsContext2D();
-        new GameView(img, score, timer, nehezseg);
+        gameView = new GameView(game ,gamecontroller,img, score, timer,
+                "könnyű");
         img.setOnMouseClicked(mouseEvent -> {
             switch (mouseEvent.getButton()) {
                 case PRIMARY:
@@ -67,18 +78,19 @@ public class GameController implements Initializable {
      * @param x koordináta
      * @param y koordináta
      */
-    public static void handleSecondaryClick(double x, double y) {
+    public  void handleSecondaryClick(double x, double y) {
         mx = (int) x;
         my = (int) y;
+    System.out.println("Mi a fasz");
 
-        if (GameModell.inboxX(mx, my) > -1 && GameModell.inboxY(mx, my) > -1) {
-            if (GameModell.getFlagged(GameModell.inboxX(mx, my) - 1, GameModell.inboxY(mx, my) - 1) == false
-                    && GameModell.getRevealed(GameModell.inboxX(mx, my) - 1, GameModell.inboxY(mx, my) - 1) == false) {
-                GameView.DrawFlag(GameModell.inboxX(mx, my), GameModell.inboxY(mx, my));
-                GameModell.setFlagged(GameModell.inboxX(mx, my) - 1, GameModell.inboxY(mx, my) - 1, true);
-            } else if (GameModell.getRevealed(GameModell.inboxX(mx, my) - 1, GameModell.inboxY(mx, my) - 1) == false) {
-                GameView.getFlag(GameModell.inboxX(mx, my), GameModell.inboxY(mx, my));
-                GameModell.setFlagged(GameModell.inboxX(mx, my) - 1, GameModell.inboxY(mx, my) - 1, false);
+        if (game.inboxX(mx, my) > -1 && game.inboxY(mx, my) > -1) {
+            if (game.getFlagged(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false
+                    && game.getRevealed(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false) {
+                gameView.DrawFlag(game.inboxX(mx, my), game.inboxY(mx, my));
+                game.setFlagged(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1, true);
+            } else if (game.getRevealed(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false) {
+                gameView.getFlag(game.inboxX(mx, my), game.inboxY(mx, my));
+                game.setFlagged(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1, false);
             }
 
 
@@ -95,52 +107,52 @@ public class GameController implements Initializable {
      * @param x mező sorszáma
      * @param y mező oszlopszáma
      */
-    public static void handlePrimaryClick(double x, double y) {
+    public  void handlePrimaryClick(double x, double y) {
         mx = (int) x;
         my = (int) y;
 
-        if (GameModell.getTimecounter() == 0) {
+        if (game.getTimecounter() == 0) {
 
-            GameView.startClock();
+            gameView.startClock();
 
             Logger.info("Óra elindult!");
 
 
         }
-        GameModell.setTimecounter(1);
-        if (GameModell.inboxX(mx, my) > -1 && GameModell.inboxY(mx, my) > -1) {
-            if (GameModell.getBombs(GameModell.inboxX(mx, my), GameModell.inboxY(mx, my))) {
+        game.setTimecounter(1);
+        if (game.inboxX(mx, my) > -1 && game.inboxY(mx, my) > -1) {
+            if (game.getBombs(game.inboxX(mx, my), game.inboxY(mx, my))) {
 
                 for (int i = 1; i <= 10; i++)
                     for (int j = 1; j <= 10; j++)
-                        if (GameModell.getBombs(i, j)) {
-                            GameView.DrawMines(i, j);
+                        if (game.getBombs(i, j)) {
+                            gameView.DrawMines(i, j);
                         }
-                GameView.ShowAlertLose();
+                gameView.ShowAlertLose();
                 Logger.info("Aknára klikkelt!");
-                GameView.stopClock();
+                gameView.stopClock();
             } else {
-                if (GameModell.getFlagged(GameModell.inboxX(mx, my) - 1, GameModell.inboxY(mx, my) - 1) == false &&
-                        GameModell.getRevealed(GameModell.inboxX(mx, my) - 1, GameModell.inboxY(mx, my) - 1) == false) {
+                if (game.getFlagged(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false &&
+                        game.getRevealed(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false) {
 
-                    neighbour(GameModell.inboxX(mx, my), GameModell.inboxY(mx, my));
-                    GameView.setScore(GameModell.getScore());
+                    neighbour(game.inboxX(mx, my), game.inboxY(mx, my));
+                    gameView.setScore(game.getScore());
 
                     for (int i = 1; i <= 10; i++)
                         for (int j = 1; j <= 10; j++) {
-                            if (GameModell.getRevealed1(i, j) == true) {
-                                GameModell.updateRevealedcounter(1);
+                            if (game.getRevealed1(i, j) == true) {
+                                game.updateRevealedcounter(1);
 
 
                             }
                         }
 
 
-                    if (GameModell.getREvealedcounter() > 100) {
-                        GameView.ShowAlertWin();
-                        GameModell.restart();
+                    if (game.getREvealedcounter() > 100) {
+                        gameView.ShowAlertWin();
+                        restart();
                     }
-                    GameModell.setRevealedcounter(1);
+                    game.setRevealedcounter(1);
                 }
             }
         }
@@ -157,55 +169,55 @@ public class GameController implements Initializable {
      * @param y a mező oszlopszáma
      * @return void
      */
-    public static void neighbour(int x, int y) {
+    public void neighbour(int x, int y) {
 
-        szam = GameModell.neighbournumber(x, y);
+        szam = game.neighbournumber(x, y);
         if (szam > 0) {
             switch (szam) {
                 case 1:
-                    GameView.setGCBlue();
+                    gameView.setGCBlue();
                     break;
                 case 2:
-                    GameView.setGCGreen();
+                    gameView.setGCGreen();
                     break;
                 case 3:
-                    GameView.setGCRed();
+                    gameView.setGCRed();
                     break;
                 case 4:
-                    GameView.setGCDarkBlue();
+                    gameView.setGCDarkBlue();
                     break;
                 case 5:
-                    GameView.setGCBrown();
+                    gameView.setGCBrown();
                     break;
                 case 6:
-                    GameView.setGCCyan();
+                    gameView.setGCCyan();
                     break;
                 case 7:
-                    GameView.setGCPurple();
+                    gameView.setGCPurple();
                     break;
                 case 8:
-                    GameView.setGCDarkGray();
+                    gameView.setGCDarkGray();
                     break;
 
             }
-            if (GameModell.getRevealed(x - 1, y - 1) == false) {
+            if (game.getRevealed(x - 1, y - 1) == false) {
 
-                GameView.Drawreveald(szam, x, y);
-                GameView.DrawNeighbour(szam, x, y);
-                GameModell.setRevealedvalue(x - 1, y - 1, true);
-                GameModell.setRevealed1value(x, y, true);
+                gameView.Drawreveald(szam, x, y);
+                gameView.DrawNeighbour(szam, x, y);
+                game.setRevealedvalue(x - 1, y - 1, true);
+                game.setRevealed1value(x, y, true);
                 Logger.info(x + " " + y + " Mező felfordítása!");
-                GameModell.updateScorevalue(10);
+                game.updateScorevalue(10);
 
             }
         } else {
-            while (szam == 0 && GameModell.getRevealed(x - 1, y - 1) == false) {
+            while (szam == 0 && game.getRevealed(x - 1, y - 1) == false) {
 
-                GameModell.setRevealedvalue(x - 1, y - 1, true);
-                GameModell.setRevealed1value(x, y, true);
+                game.setRevealedvalue(x - 1, y - 1, true);
+                game.setRevealed1value(x, y, true);
                 Logger.info(x + " " + y + " Mező felfordítása!");
-                GameView.DrawClicked(x, y);
-                GameModell.updateScorevalue(10);
+                gameView.DrawClicked(x, y);
+                game.updateScorevalue(10);
 
                 if (x == 1 && y == 10) {
                     neighbour(x, y - 1);
@@ -273,10 +285,36 @@ public class GameController implements Initializable {
             }
         }
     }
+    /**
+     * Ez a metódus újrakezdi a játékot , újragenerálja az aknákat és minden mást alaphelyzetbe állít.
+     */
+    public void restart() {
+        game.setRevealedcounter(1);
+        if (game.getCounter() > 0) {
+            game.set_to_zero();
+        }
+        gameView.Restart();
 
+        game.BombGenerate(game.getnehezseg());
+        game.howmuchneighbour();
+        game.setScore(0);
+        gameView.setScore(0);
+        gameView.setTimer(0);
+        game.timer = 1;
+        game.setTimecounter(0);
+        game.updateStop();
+        if (game.getStop() > 0) {
+            gameView.stopClock();
+            game.setStop(0);
+        }
+    }
 
     public void restart(MouseEvent mouseEvent) throws IOException {
-        GameModell.restart();
+        restart();
+    }
+
+    public int getTime() {
+        return game.getTime();
     }
 }
 

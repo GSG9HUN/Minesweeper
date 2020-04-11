@@ -13,12 +13,10 @@ public class GameModell {
 
     private static int Score = 0;
     private static int counter;
-
+    static int szam = 0;
 
 
     public String username;
-    private static int mx = -1000;
-    private static int my = -1000;
     private static boolean[][] bombs;
     private static int[][] neighbours;
     private static boolean[][] flagged;
@@ -31,12 +29,11 @@ public class GameModell {
     public static int revealedcounter = 1;
     public static boolean revealed1[][];
 
-/**
- *
- *  Ez a metódus meghatározza azt, hogy egy adott mező mellett hány akna van.
- *
- * @return void
- */
+    /**
+     * Ez a metódus meghatározza azt, hogy egy adott mező mellett hány akna van.
+     *
+     * @return void
+     */
 
     public static void howmuchneighbour() {
         Logger.info("Mezők aknásmezőkkel való szomszédainak meghatározása!");
@@ -55,13 +52,14 @@ public class GameModell {
 
             }
     }
-/**
- * Ez a metódus meghatározza, hogy a klikkelt mező mellett hány akna van.
- *
- * @param x a mező sorszáma
- * @param y a mező oszlopszáma
- * @return Integer, ami az aknák száma
- */
+
+    /**
+     * Ez a metódus meghatározza, hogy a klikkelt mező mellett hány akna van.
+     *
+     * @param x a mező sorszáma
+     * @param y a mező oszlopszáma
+     * @return Integer, ami az aknák száma
+     */
     static int neighbournumber(int x, int y) {
         int i = 0;
         if (x == 1 && y == 10) {
@@ -161,157 +159,6 @@ public class GameModell {
 
 
     /**
-     * Ez a metódus elsőre legkéri mennyi akna van közvetlenül a mező mellett.
-     * Ha ez megvolt és van legalább egy akna mellette akkor a mezőt felfordítja
-     * és ráírja hány akna van közvetlenül mellette. Ha a szám 0 akkor rekurzívan
-     * minden szomszédos mezőre meghívodik és felfordítja őket amíg nem talál olyan mezőt
-     * ami mellett van legalább 1 akna.
-     * @param x a mező sorszáma
-     * @param y a mező oszlopszáma
-     * @return void
-     */
-    public static void neighbour(int x, int y) {
-
-        int szam = neighbournumber(x, y);
-        if (szam > 0) {
-            switch (szam) {
-                case 1:
-                    GameView.setGCBlue();
-                    break;
-                case 2:
-                    GameView.setGCGreen();
-                    break;
-                case 3:
-                    GameView.setGCRed();
-                    break;
-                case 4:
-                    GameView.setGCDarkBlue();
-                    break;
-                case 5:
-                    GameView.setGCBrown();
-                    break;
-                case 6:
-                    GameView.setGCCyan();
-                    break;
-                case 7:
-                    GameView.setGCPurple();
-                    break;
-                case 8:
-                    GameView.setGCDarkGray();
-                    break;
-
-            }
-            if (revealed[x - 1][y - 1] == false) {
-
-                GameView.Drawreveald(szam,x,y);
-                GameView.DrawNeighbour(szam,x,y);
-                revealed[x - 1][y - 1] = true;
-                revealed1[x][y] = true;
-                Logger.info(x + " " + y + " Mező felfordítása!");
-
-                Score += 10;
-            }
-        } else {
-            while (szam == 0 && revealed[x - 1][y - 1] == false) {
-
-
-                revealed[x - 1][y - 1] = true;
-                revealed1[x][y] = true;
-                Logger.info(x + " " + y + " Mező felfordítása!");
-                GameView.DrawClicked(x,y);
-                Score += 10;
-
-                if (x == 1 && y == 10) {
-                    neighbour(x, y - 1);
-                    neighbour(x + 1, y - 1);
-                    neighbour(x + 1, y);
-                    break;
-                } else if (x == 10 && y == 1) {
-                    neighbour(x, y + 1);
-                    neighbour(x - 1, y + 1);
-                    neighbour(x - 1, y);
-                    break;
-                } else if (x == 1 && y == 1) {
-                    neighbour(x, y + 1);
-                    neighbour(x + 1, y + 1);
-                    neighbour(x + 1, y);
-                    break;
-                } else if (x == 10 && y == 10) {
-                    neighbour(x, y - 1);
-                    neighbour(x - 1, y - 1);
-                    neighbour(x - 1, y);
-                    break;
-
-                } else if (x == 10 && y != 1) {
-                    neighbour(x, y - 1);
-                    neighbour(x, y + 1);
-                    neighbour(x - 1, y - 1);
-                    neighbour(x - 1, y);
-                    neighbour(x - 1, y + 1);
-                    break;
-                } else if (x != 1 && y == 10) {
-                    neighbour(x, y - 1);
-                    neighbour(x - 1, y - 1);
-                    neighbour(x - 1, y);
-                    neighbour(x + 1, y - 1);
-                    neighbour(x + 1, y);
-                    break;
-                } else if (x == 1 && y != 10) {
-                    neighbour(x, y - 1);
-                    neighbour(x, y + 1);
-                    neighbour(x + 1, y - 1);
-                    neighbour(x + 1, y);
-                    neighbour(x + 1, y + 1);
-                    break;
-                } else if (y == 1 && x != 10) {
-                    neighbour(x + 1, y);
-                    neighbour(x - 1, y);
-                    neighbour(x + 1, y + 1);
-                    neighbour(x - 1, y + 1);
-                    neighbour(x, y + 1);
-                    break;
-                } else if (y > 1 && x < 10 && y < 10 && x > 1) {
-                    neighbour(x - 1, y - 1);
-                    neighbour(x - 1, y);
-                    neighbour(x - 1, y + 1);
-                    neighbour(x, y - 1);
-                    neighbour(x, y + 1);
-                    neighbour(x + 1, y - 1);
-                    neighbour(x + 1, y);
-                    neighbour(x + 1, y + 1);
-                    break;
-                } else {
-                    break;
-                }
-
-            }
-        }
-    }
-
-    /**
-     * Ez a metódus figyeli a jobb klikket. És ha egy olyan mezőre klikkelt ami nincs felfordítva
-     * valamint nincs rajta már zászló akkor lerak egy zászlót. Ha van rajta akkor leveszi azt.
-     * @param x koordináta
-     * @param y koordináta
-     */
-    public static void handleSecondaryClick(double x, double y) {
-    mx = (int) x;
-    my = (int) y;
-
-        if (inboxX() > -1 && inboxY() > -1) {
-            if (!flagged[inboxX() - 1][inboxY() - 1] && revealed[inboxX() - 1][inboxY() - 1] == false) {
-                GameView.DrawFlag(inboxX(),inboxY());
-                flagged[inboxX() - 1][inboxY() - 1] = true;
-            } else if (revealed[inboxX() - 1][inboxY() - 1] == false) {
-                GameView.getFlag(inboxX(),inboxY());
-                flagged[inboxX() - 1][inboxY() - 1] = false;
-            }
-
-
-        }
-    }
-
-    /**
      * Ez a metódus mindent visszaállít kezdeti állapotba.
      */
     public static void set_to_zero() {
@@ -331,6 +178,7 @@ public class GameModell {
      * Ez a metódus legenerálja az aknák helyét véletlenszerűen a nehézség függvényébe.
      * Ha a nehézség {@code könnyű} akkor 10 aknák generál ha {@code közepes} akkor 40
      * aknát ha {@code nehéz} akkor 99 aknát
+     *
      * @param nehezseg a játék nehézsége.
      */
     public static void BombGenerate(String nehezseg) {
@@ -408,10 +256,10 @@ public class GameModell {
     }
 
 
-
     /**
      * Ez a konstruktor beállítja a felhasználónevet és a nehézséget.
      * Legenerálja az aknákat és a mezőkhöz meghatározza hány aknak van mellettük
+     *
      * @param username a játékos felhasználóneve
      * @param nehezseg a játék nehézségi szintje
      * @throws IOException ide pl azt se tudom mit kéne írni
@@ -426,11 +274,10 @@ public class GameModell {
         counter++;
 
 
-
     }
 
     /**
-     *Ez a metódus újrakezdi a játékot , újragenerálja az aknákat és minden mást alaphelyzetbe állít.
+     * Ez a metódus újrakezdi a játékot , újragenerálja az aknákat és minden mást alaphelyzetbe állít.
      */
     public static void restart() {
         revealedcounter = 1;
@@ -448,75 +295,18 @@ public class GameModell {
         timercounter = 0;
         stop++;
         if (stop > 0) {
-           GameView.stopClock();
+            GameView.stopClock();
             stop = 0;
         }
     }
 
-    /**
-     * Ez a metódus fordítja fel a mezőket, ha akna van rajta akkor kirajzolja az összes helyre az aknákat és
-     * egy üzenetet dob fel, hogy kikaptunk majd ha kilépünk az üzenetből elölről kezdődik az egész.
-     * Ha viszont nem lépünk aknára akkor a legvégén egy gratulációs üzenetet dob fel és ha kilépünk
-     * belőle akkor szintén előlről kezdődik.
-     * @param x mező sorszáma
-     * @param y mező oszlopszáma
-
-     */
-    public static void handlePrimaryClick(double x, double y) {
-        mx = (int) x;
-        my = (int) y;
-        if (timercounter == 0) {
-
-            GameView.startClock();
-
-            Logger.info("Óra elindult!");
-
-
-        }
-        timercounter = 1;
-        if (inboxX() > -1 && inboxY() > -1) {
-            if (bombs[inboxX()][inboxY()]) {
-
-                for (int i = 1; i <= 10; i++)
-                    for (int j = 1; j <= 10; j++)
-                        if (bombs[i][j]) {
-                            GameView.DrawMines(i,j);
-                        }
-                GameView.ShowAlertLose();
-                Logger.info("Aknára klikkelt!");
-                GameView.stopClock();
-            } else {
-                if (!flagged[inboxX() - 1][inboxY() - 1] && revealed[inboxX() - 1][inboxY() - 1] == false) {
-
-
-
-                    neighbour(inboxX(), inboxY());
-                    GameView.setScore(Score);
-
-                    for (int i = 1; i <= 10; i++)
-                        for (int j = 1; j <= 10; j++) {
-                            if (revealed1[i][j] == true) {
-                                revealedcounter++;
-
-                            }
-                        }
-
-
-                    if (revealedcounter > 100) {
-                        GameView.ShowAlertWin();
-                        restart();
-                    }
-                    revealedcounter = 1;
-                }
-            }
-        }
-    }
 
     /**
      * Ez a metódus azt nézi, hogy ahova klikkeltünk az melyik négyzetbe van ha benne van.
+     *
      * @return visszaadja melyik sorba klikkeltünk.
      */
-    public static int inboxX() {
+    public static int inboxX(int mx, int my) {
         if (nehezseg.equals("könnyű")) {
 
 
@@ -538,9 +328,10 @@ public class GameModell {
 
     /**
      * Ez a metódus azt nézi meg, hogy ahova klikkeltünk az benne van-e egy négyzetbe az y tengelyen.
+     *
      * @return visszaadja azt h melyik oszlop az.
      */
-    public static int inboxY() {
+    public static int inboxY(int mx, int my) {
         if (nehezseg.equals("könnyű")) {
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++) {
@@ -558,5 +349,60 @@ public class GameModell {
         return -1;
     }
 
+    public static boolean getFlagged(int x, int y) {
+        return flagged[x][y];
+    }
+
+    public static boolean getRevealed(int x, int y) {
+        return revealed[x][y];
+    }
+
+    public static void setFlagged(int x, int y, boolean value) {
+        flagged[x][y] = value;
+    }
+
+    public static int getTimecounter() {
+        return timercounter;
+    }
+
+    public static void setTimecounter(int i) {
+        timercounter = i;
+    }
+
+    public static boolean getBombs(int inboxX, int inboxY) {
+        return bombs[inboxX][inboxY];
+    }
+
+    public static int getScore() {
+        return Score;
+    }
+
+    public static boolean getRevealed1(int i, int j) {
+        return revealed1[i][j];
+    }
+
+    public static void setRevealedcounter(int i) {
+        revealedcounter = i;
+    }
+
+    public static int getREvealedcounter() {
+        return revealedcounter;
+    }
+
+    public static void updateRevealedcounter(int i) {
+        revealedcounter += i;
+    }
+
+    public static void setRevealedvalue(int x, int y, boolean value) {
+        revealed[x][y] = value;
+    }
+
+    public static void setRevealed1value(int x, int y, boolean value) {
+        revealed1[x][y] = value;
+    }
+
+    public static void updateScorevalue(int i) {
+        Score += i;
+    }
 }
 

@@ -255,8 +255,6 @@ public class GameModell {
         }
     }
 
-    GameModell() {
-    }
 
 
     /**
@@ -407,11 +405,5 @@ public class GameModell {
         return counter;
     }
 
-    public void setTime(int value) {
-        timer+=value;
-    }
-    public int getTime(){
-        return timer;
-    }
 }
 

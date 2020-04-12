@@ -18,7 +18,6 @@ public class GameController implements Initializable {
 
     private static GameModell game;
     private static GameView gameView;
-    private static GameController gamecontroller;
     @FXML
     public Canvas img;
     @FXML
@@ -31,6 +30,7 @@ public class GameController implements Initializable {
     public int mx = -1000;
     public int my = -1000;
     public int szam = 0;
+    private int timeinsecond=0;
 
 
     public GameController() {
@@ -42,21 +42,18 @@ public class GameController implements Initializable {
 
         this.nehezseg = nehezseg;
         this.username = username;
-        gamecontroller = new GameController();
         game = new GameModell(username, this.nehezseg);
         game.setSpacing(5);
 
 
     }
-    void setTime(int value){
-        game.setTime(value);
-    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         gc = img.getGraphicsContext2D();
-        gameView = new GameView(game ,gamecontroller,img, score, timer,
-                "könnyű");
+        gameView = new GameView(game ,this,img, score, timer,
+                game.getnehezseg());
         img.setOnMouseClicked(mouseEvent -> {
             switch (mouseEvent.getButton()) {
                 case PRIMARY:
@@ -131,6 +128,7 @@ public class GameController implements Initializable {
                 gameView.ShowAlertLose();
                 Logger.info("Aknára klikkelt!");
                 gameView.stopClock();
+                timeinsecond=gameView.getTimeinsecond();
             } else {
                 if (game.getFlagged(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false &&
                         game.getRevealed(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false) {
@@ -150,6 +148,7 @@ public class GameController implements Initializable {
 
                     if (game.getREvealedcounter() > 100) {
                         gameView.ShowAlertWin();
+                       timeinsecond= gameView.getTimeinsecond();
                         restart();
                     }
                     game.setRevealedcounter(1);
@@ -293,6 +292,7 @@ public class GameController implements Initializable {
         if (game.getCounter() > 0) {
             game.set_to_zero();
         }
+        timeinsecond=gameView.getTimeinsecond();
         gameView.Restart();
 
         game.BombGenerate(game.getnehezseg());
@@ -305,6 +305,7 @@ public class GameController implements Initializable {
         game.updateStop();
         if (game.getStop() > 0) {
             gameView.stopClock();
+
             game.setStop(0);
         }
     }
@@ -313,8 +314,5 @@ public class GameController implements Initializable {
         restart();
     }
 
-    public int getTime() {
-        return game.getTime();
-    }
 }
 

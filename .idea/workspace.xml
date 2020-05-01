@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1322cb7-9a73-4194-b6c6-624bfc8b25bb" name="Default Changelist" comment="" />
+    <list default="true" id="d1322cb7-9a73-4194-b6c6-624bfc8b25bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Minesweeper.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +31,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,24 +50,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/resources/org/example/primary.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZOCVTGz7ztDWnf4kNFUPH3Wfd0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -86,6 +107,18 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Inspections" timestamp="1584800639521">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -95,10 +128,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1584896016808" />
-    <state x="381" y="212" key="#Project_Structure" timestamp="1584962769166">
+    <state x="381" y="189" key="#Project_Structure" timestamp="1587210487673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="381" y="212" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1584962769166" />
+    <state x="381" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1587210487673" />
     <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1586618932766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -111,38 +144,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586595299605" />
-    <state width="914" height="288" key="GridCell.Tab.0.bottom" timestamp="1586682554359">
+    <state width="675" height="282" key="GridCell.Tab.0.bottom" timestamp="1587220931799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586682554359" />
-    <state width="914" height="288" key="GridCell.Tab.0.center" timestamp="1586682554359">
+    <state width="675" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931799" />
+    <state width="675" height="282" key="GridCell.Tab.0.center" timestamp="1587220931798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586682554359" />
-    <state width="914" height="288" key="GridCell.Tab.0.left" timestamp="1586682554359">
+    <state width="675" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931798" />
+    <state width="675" height="282" key="GridCell.Tab.0.left" timestamp="1587220931798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586682554359" />
-    <state width="914" height="288" key="GridCell.Tab.0.right" timestamp="1586682554359">
+    <state width="675" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931798" />
+    <state width="675" height="282" key="GridCell.Tab.0.right" timestamp="1587220931799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586682554359" />
-    <state width="914" height="347" key="GridCell.Tab.1.bottom" timestamp="1586264811654">
+    <state width="675" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931799" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586264811654" />
-    <state width="914" height="347" key="GridCell.Tab.1.center" timestamp="1586264811654">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931789" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586264811654" />
-    <state width="914" height="347" key="GridCell.Tab.1.left" timestamp="1586264811654">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931789" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586264811654" />
-    <state width="914" height="347" key="GridCell.Tab.1.right" timestamp="1586264811654">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931789" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586264811654" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931789" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1585917039422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -163,10 +196,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586261650679" />
-    <state x="342" y="215" key="new project wizard" timestamp="1584788230313">
+    <state x="431" y="187" key="new project wizard" timestamp="1587219295983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1584788230313" />
+    <state x="431" y="187" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1587219295983" />
     <state x="666" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1586615985457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -175,5 +208,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586617358093" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Minesweeper$App.ic" NAME="App Coverage Results" MODIFIED="1587217609784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>

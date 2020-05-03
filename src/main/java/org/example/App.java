@@ -8,9 +8,7 @@ import javafx.stage.Stage;
 import org.tinylog.Logger;
 import java.io.IOException;
 
-/**
- * JavaFX App
- */
+/** JavaFX App */
 public class App extends Application {
 
     public static Scene scene;

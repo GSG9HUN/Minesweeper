@@ -34,7 +34,6 @@ public class GameView {
     Alert alert = new Alert(Alert.AlertType.WARNING);
     Alert alertwin = new Alert(Alert.AlertType.WARNING);
     public String nehezseg= new String();
-    private GameView gameView;
     private  GameModell game;
     private GameController controller;
 
@@ -55,7 +54,6 @@ public class GameView {
         this.score = score;
         this.timer = timer;
         controller=controllercome;
-        //gameView=this;
         this.nehezseg=nehezseg;
         game=gamecome;
         gc = img.getGraphicsContext2D();

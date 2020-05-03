@@ -295,8 +295,10 @@ public class GameModell {
                         return i + 1;
                 }
         } else if (nehezseg.equals("közepes")) {
+            Logger.info("Közepes szint");
 
         } else if (nehezseg.equals("közepes")) {
+            Logger.info("Közepes szint");
 
         }
         return -1;

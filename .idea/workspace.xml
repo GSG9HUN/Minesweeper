@@ -20,16 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1322cb7-9a73-4194-b6c6-624bfc8b25bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Rekords.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameModell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OptionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OptionsModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OptionsModell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SecondaryModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SecondaryModell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameModell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameModell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +78,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/RSA" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/untitled" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JSON" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -139,10 +148,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="381" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1587210487673" />
-    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1586618932766">
+    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1589987716108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586618932766" />
+    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589987716108" />
     <state x="779" y="211" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1588342988425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -151,26 +160,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1585042355039" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1588424252358">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1589990289090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588424252358" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1588346420996">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589990289090" />
+    <state width="916" height="285" key="GridCell.Tab.0.bottom" timestamp="1589994594403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588346420996" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1588346420996">
+    <state width="916" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589994594403" />
+    <state width="916" height="285" key="GridCell.Tab.0.center" timestamp="1589994594402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588346420996" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1588346420995">
+    <state width="916" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589994594402" />
+    <state width="916" height="285" key="GridCell.Tab.0.left" timestamp="1589994594402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588346420995" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1588346420996">
+    <state width="916" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589994594402" />
+    <state width="916" height="285" key="GridCell.Tab.0.right" timestamp="1589994594403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588346420996" />
+    <state width="916" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589994594403" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -187,14 +196,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931789" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1585917039422">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1589981507058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585917039422" />
-    <state x="753" y="127" key="SettingsEditor" timestamp="1588345720690">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589981507058" />
+    <state x="554" y="132" key="SettingsEditor" timestamp="1589980896006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="127" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588345720690" />
+    <state x="554" y="132" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589980896006" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1584962079238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -211,10 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586261650679" />
-    <state x="431" y="187" key="new project wizard" timestamp="1587219295983">
+    <state x="431" y="187" key="new project wizard" timestamp="1589975275169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="431" y="187" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1587219295983" />
+    <state x="431" y="187" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1589975275169" />
     <state x="666" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1586615985457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

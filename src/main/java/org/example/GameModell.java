@@ -2,19 +2,14 @@ package org.example;
 
 
 import org.tinylog.Logger;
-
 import java.io.IOException;
 import java.util.Random;
-
-
 public class GameModell {
 
     public String nehezseg;
-
     private int Score = 0;
     private int counter;
     public int spacing;
-
     public void setSpacing(int spacing) {
         this.spacing = spacing;
     }

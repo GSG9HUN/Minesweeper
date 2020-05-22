@@ -85,8 +85,6 @@ public class GameView {
     public  void DrawFlag(int x, int y) {
         gc.drawImage(flag, (spacing + (x - 1) * 50) + 2, (spacing + (y - 1) * 50 + 50) + 2);
         Logger.info("Flag lehelyetése!");
-
-
     }
 
     /**

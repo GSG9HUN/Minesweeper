@@ -78,7 +78,6 @@ public class GameController implements Initializable {
     public  void handleSecondaryClick(double x, double y) {
         mx = (int) x;
         my = (int) y;
-    System.out.println("Mi a fasz");
 
         if (game.inboxX(mx, my) > -1 && game.inboxY(mx, my) > -1) {
             if (game.getFlagged(game.inboxX(mx, my) - 1, game.inboxY(mx, my) - 1) == false

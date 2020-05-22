@@ -20,18 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1322cb7-9a73-4194-b6c6-624bfc8b25bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/OptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/OptionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PrimaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/SecondaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43908045" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -190,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="950" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590166246516" />
-    <state width="1877" height="458" key="GridCell.Tab.0.bottom" timestamp="1590179977497">
+    <state width="914" height="458" key="GridCell.Tab.0.bottom" timestamp="1590180871597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977497" />
-    <state width="1877" height="458" key="GridCell.Tab.0.center" timestamp="1590179977497">
+    <state width="914" height="458" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590180871597" />
+    <state width="914" height="458" key="GridCell.Tab.0.center" timestamp="1590180871597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977497" />
-    <state width="1877" height="458" key="GridCell.Tab.0.left" timestamp="1590179977496">
+    <state width="914" height="458" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590180871597" />
+    <state width="914" height="458" key="GridCell.Tab.0.left" timestamp="1590180871597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977496" />
-    <state width="1877" height="458" key="GridCell.Tab.0.right" timestamp="1590179977497">
+    <state width="914" height="458" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590180871597" />
+    <state width="914" height="458" key="GridCell.Tab.0.right" timestamp="1590180871597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977497" />
+    <state width="914" height="458" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590180871597" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -226,10 +216,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590154539055" />
-    <state x="369" y="167" width="1254" height="851" key="SettingsEditor" timestamp="1590161493233">
+    <state x="587" y="84" width="1254" height="851" key="SettingsEditor" timestamp="1590180767594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="369" y="167" width="1254" height="851" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590161493233" />
+    <state x="587" y="84" width="1254" height="851" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590180767594" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1584962079238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modell;
 
 
 import org.tinylog.Logger;
@@ -59,7 +59,7 @@ public class GameModell {
      * @param y a mező oszlopszáma
      * @return Integer, ami az aknák száma
      */
-    int neighbournumber(int x, int y) {
+    public int neighbournumber(int x, int y) {
         int i = 0;
         if (x == 1 && y == 10) {
             if (bombs[x][y - 1])
@@ -261,7 +261,7 @@ public class GameModell {
      * @param nehezseg a játék nehézségi szintje
      * @throws IOException ide pl azt se tudom mit kéne írni
      */
-    GameModell(String username, String nehezseg) throws IOException {
+    public GameModell(String username, String nehezseg) throws IOException {
 
         this.username = username;
         this.nehezseg = nehezseg;

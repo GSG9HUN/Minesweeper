@@ -1,4 +1,4 @@
-package org.example;
+package org.example.controller;
 
 import javafx.fxml.FXML;
 import org.tinylog.Logger;

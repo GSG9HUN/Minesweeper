@@ -1,4 +1,4 @@
-package org.example;
+package org.example.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -6,6 +6,8 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import org.example.GameView;
+import org.example.modell.GameModell;
 import org.tinylog.Logger;
 
 import java.io.IOException;
@@ -125,6 +127,7 @@ public class GameController implements Initializable {
                             gameView.DrawMines(i, j);
                         }
                 gameView.ShowAlertLose();
+                restart();
                 Logger.info("Aknára klikkelt!");
                 gameView.stopClock();
                 timeinsecond=gameView.getTimeinsecond();

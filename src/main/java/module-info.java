@@ -3,6 +3,8 @@ module org.examples {
         requires javafx.controls;
         requires javafx.fxml;
         requires org.tinylog.api;
-        opens org.example to javafx.fxml;
-        exports org.example;
+        requires com.google.gson;
+        opens org.example.controller to javafx.fxml;
+        exports org.example.controller;
+        exports org.example.modell;
         }

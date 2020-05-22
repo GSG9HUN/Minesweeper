@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.collections.FXCollections?>
-<VBox prefHeight="480" prefWidth="600" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.OptionsController">
+<VBox prefHeight="480" prefWidth="600" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.OptionsController">
     <children>
         <Label text="Válasz nehézséget." />
         <ChoiceBox fx:id= "kivalasztas" value="könnyű" >

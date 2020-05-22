@@ -1,7 +1,8 @@
-package org.example;
+package org.example.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
+import org.example.modell.OptionsModell;
 import org.tinylog.Logger;
 
 import java.io.IOException;

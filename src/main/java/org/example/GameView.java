@@ -11,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
+import org.example.controller.GameController;
+import org.example.modell.GameModell;
 import org.tinylog.Logger;
 
 
@@ -22,8 +24,8 @@ public class GameView {
     public Rekords rekordok = new Rekords();
 
     static {
-        mine = new Image(new GameView().getClass().getResourceAsStream("mine.png"));
-        flag = new Image(new GameView().getClass().getResourceAsStream("flag.png"));
+        mine = new Image(new GameView().getClass().getResourceAsStream("img/mine.png"));
+        flag = new Image(new GameView().getClass().getResourceAsStream("img/flag.png"));
     }
 
     public  int spacing = 5;
@@ -34,7 +36,7 @@ public class GameView {
     Alert alert = new Alert(Alert.AlertType.WARNING);
     Alert alertwin = new Alert(Alert.AlertType.WARNING);
     public String nehezseg= new String();
-    private  GameModell game;
+    private GameModell game;
     private GameController controller;
 
     /**
@@ -49,7 +51,7 @@ public class GameView {
      * @param nehezseg A nehézség amit beállított
      */
 
-    GameView(GameModell gamecome,GameController controllercome ,Canvas img, Label score, Label timer, String nehezseg) {
+    public GameView(GameModell gamecome, GameController controllercome, Canvas img, Label score, Label timer, String nehezseg) {
         this.img = img;
         this.score = score;
         this.timer = timer;
@@ -244,7 +246,7 @@ public class GameView {
         rekordok.username.add(game.username);
         System.out.println(rekordok.score+" "+rekordok.username);
         alert.showAndWait();
-        controller.restart();
+
     }
 
     /**

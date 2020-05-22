@@ -1,4 +1,4 @@
-package org.example;
+package org.example.modell;
 
 
 import org.tinylog.Logger;
@@ -14,7 +14,7 @@ public class SecondaryModell {
 
     }
 
-   SecondaryModell(){
+   public SecondaryModell(){
 
    }
 }

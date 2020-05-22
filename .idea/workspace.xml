@@ -20,15 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1322cb7-9a73-4194-b6c6-624bfc8b25bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameModell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameModell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameModell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/OptionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/OptionsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/OptionsModell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/OptionsModell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/PrimaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SecondaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SecondaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SecondaryModell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SecondaryModell.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +79,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/14/json-simple-1.1.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/gson-example-master" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43908045" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JSON" />
+    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -86,8 +93,11 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="Minesweeper" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -142,38 +152,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="381" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1587210487673" />
+    <state x="781" y="146" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590162271698">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="781" y="146" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590162271698" />
+    <state x="382" y="228" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1590161234204">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="382" y="228" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590161234204" />
     <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1589987716108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589987716108" />
-    <state x="779" y="211" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1588342988425">
+    <state x="1056" y="281" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590161169401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="779" y="211" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588342988425" />
+    <state x="1056" y="281" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590161169401" />
+    <state x="779" y="211" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1590159868874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="779" y="211" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590159868874" />
     <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585042355039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1585042355039" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1590147913017">
+    <state x="1194" y="241" key="EnvironmentVariablesDialog" timestamp="1590161243058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590147913017" />
-    <state width="916" height="281" key="GridCell.Tab.0.bottom" timestamp="1590158387427">
+    <state x="1194" y="241" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590161243058" />
+    <state x="950" y="274" key="FileChooserDialogImpl" timestamp="1590166246516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590158387427" />
-    <state width="916" height="281" key="GridCell.Tab.0.center" timestamp="1590158387427">
+    <state x="950" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590166246516" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1590166544797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590158387427" />
-    <state width="916" height="281" key="GridCell.Tab.0.left" timestamp="1590158387427">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590166544797" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1590166544797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590158387427" />
-    <state width="916" height="281" key="GridCell.Tab.0.right" timestamp="1590158387427">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590166544797" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1590166544797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590158387427" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590166544797" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1590166544797">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590166544797" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -194,10 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590154539055" />
-    <state x="499" y="189" width="1254" height="851" key="SettingsEditor" timestamp="1590147916849">
+    <state x="369" y="167" width="1254" height="851" key="SettingsEditor" timestamp="1590161493233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="499" y="189" width="1254" height="851" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590147916849" />
+    <state x="369" y="167" width="1254" height="851" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590161493233" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1584962079238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -230,6 +256,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586617358093" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/App.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Minesweeper$App.ic" NAME="App Coverage Results" MODIFIED="1587217609784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

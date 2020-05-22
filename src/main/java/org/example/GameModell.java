@@ -2,6 +2,7 @@ package org.example;
 
 
 import org.tinylog.Logger;
+
 import java.io.IOException;
 import java.util.Random;
 public class GameModell {

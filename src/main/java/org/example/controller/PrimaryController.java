@@ -1,6 +1,7 @@
 package org.example.controller;
 
 import javafx.fxml.FXML;
+import org.example.App;
 import org.tinylog.Logger;
 
 import java.io.IOException;

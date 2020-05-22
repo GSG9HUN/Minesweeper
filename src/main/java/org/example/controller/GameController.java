@@ -6,7 +6,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import org.example.GameView;
+import org.example.view.GameView;
 import org.example.modell.GameModell;
 import org.tinylog.Logger;
 

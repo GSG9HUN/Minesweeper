@@ -23,43 +23,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modell/GameModell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/OptionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OptionsModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modell/OptionsModell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PrimaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/SecondaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SecondaryModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modell/SecondaryModell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/easy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/easy.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/img/flag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/hard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/hard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/medium.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/medium.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mine.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/img/mine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/options.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/options.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/GameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/OptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/OptionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/SecondaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameModell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/OptionsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/OptionsModell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/PrimaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SecondaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SecondaryModell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/easy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/easy.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/flag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/hard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/hard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/medium.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/medium.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/options.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/options.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameView.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +86,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources\org\example\img" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
@@ -121,7 +96,7 @@
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.controller.App" />
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="Minesweeper" />
       <option name="REDIRECT_INPUT" value="true" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
@@ -199,6 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="779" y="211" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590159868874" />
+    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590179907090">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1590179907090" />
     <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585042355039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -211,22 +190,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="950" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590166246516" />
-    <state width="1877" height="458" key="GridCell.Tab.0.bottom" timestamp="1590179477796">
+    <state width="1877" height="458" key="GridCell.Tab.0.bottom" timestamp="1590179977497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590179477796" />
-    <state width="1877" height="458" key="GridCell.Tab.0.center" timestamp="1590179477795">
+    <state width="1877" height="458" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977497" />
+    <state width="1877" height="458" key="GridCell.Tab.0.center" timestamp="1590179977497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590179477795" />
-    <state width="1877" height="458" key="GridCell.Tab.0.left" timestamp="1590179477795">
+    <state width="1877" height="458" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977497" />
+    <state width="1877" height="458" key="GridCell.Tab.0.left" timestamp="1590179977496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590179477795" />
-    <state width="1877" height="458" key="GridCell.Tab.0.right" timestamp="1590179477796">
+    <state width="1877" height="458" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977496" />
+    <state width="1877" height="458" key="GridCell.Tab.0.right" timestamp="1590179977497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="458" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590179477796" />
+    <state width="1877" height="458" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590179977497" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -288,8 +267,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/App.java</url>
-          <line>11</line>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/App.java</url>
+          <line>10</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

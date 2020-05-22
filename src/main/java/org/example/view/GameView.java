@@ -1,4 +1,4 @@
-package org.example;
+package org.example.view;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -11,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
+import org.example.Rekords;
+import org.example.App;
 import org.example.controller.GameController;
 import org.example.modell.GameModell;
 import org.tinylog.Logger;
@@ -24,8 +26,8 @@ public class GameView {
     public Rekords rekordok = new Rekords();
 
     static {
-        mine = new Image(new GameView().getClass().getResourceAsStream("img/mine.png"));
-        flag = new Image(new GameView().getClass().getResourceAsStream("img/flag.png"));
+        mine = new Image(App.class.getResourceAsStream("img/mine.png"));
+        flag = new Image(App.class.getResourceAsStream("img/flag.png"));
     }
 
     public  int spacing = 5;

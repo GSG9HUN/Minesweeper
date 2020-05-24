@@ -1,7 +1,13 @@
 package org.example.modell;
 
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+import org.example.Rekords;
 import org.tinylog.Logger;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 public class GameModell {
@@ -10,6 +16,8 @@ public class GameModell {
     private int Score = 0;
     private int counter;
     public int spacing;
+    public Rekords rekordok = new Rekords() ;
+    String filename = "Rekordok.json";
     public void setSpacing(int spacing) {
         this.spacing = spacing;
     }
@@ -25,6 +33,8 @@ public class GameModell {
     public int stop = 0;
     public int revealedcounter = 1;
     public boolean[][] revealed1;
+    public Gson gson = new Gson();
+    FileOutputStream outputStream;
 
     /**
      * Ez a metódus meghatározza azt, hogy egy adott mező mellett hány akna van.
@@ -402,5 +412,57 @@ public class GameModell {
         return counter;
     }
 
-}
+    /**
+     * Ez a metódus a rekordok objektum time,score és username listájához adja a paraméterként kapott értékeket.
+     * @param timeinsecond az idő másodpercekben.
+     * @param score a pontok.
+     * @param username a játékosneve.
+     */
+    public void addToRekords(int timeinsecond, int score, String username){
+        rekordok.time.add(timeinsecond);
+        rekordok.score.add(score);
+        rekordok.username.add(username);
+        sortrekords();
+
+        }
+
+    /**
+     * Rendezik a rekordok objektum listáit pontok alapján.
+     */
+    public void sortrekords(){
+        Rekords.concurrentSort(rekordok.score,rekordok.score,rekordok.time,rekordok.username);
+        }
+
+
+    /**
+     * Ez a metódus beleír a Rekordok.json fájlba.
+     */
+    public void write(){
+
+            System.out.println(gson.toJson(rekordok));
+            String s = gson.toJson(rekordok);
+
+            try {
+                outputStream = new FileOutputStream("Rekordok.json");
+                outputStream.write(s.getBytes());
+                outputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+    /**
+     * Ez a metódus olvas a filename fájlból.
+     */
+        public void read(){
+            try {
+                JsonReader reader = new JsonReader(new FileReader(filename));
+                rekordok = gson.fromJson(reader,Rekords.class);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
+
 

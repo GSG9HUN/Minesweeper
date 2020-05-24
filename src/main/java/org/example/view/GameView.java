@@ -12,7 +12,6 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
 import org.example.App;
-import org.example.Rekords;
 import org.example.controller.GameController;
 import org.example.modell.GameModell;
 import org.tinylog.Logger;
@@ -23,7 +22,6 @@ public class GameView {
     public static Image mine;
     public static Image flag;
     private int timeinsecond=0;
-    public Rekords rekordok = new Rekords();
 
     static {
         mine = new Image(App.class.getResourceAsStream("img/mine.png"));
@@ -220,10 +218,6 @@ public class GameView {
      */
     public void ShowAlertWin() {
         this.stopClock();
-        rekordok.time.add(timeinsecond);
-        rekordok.score.add(game.getScore());
-        rekordok.username.add(game.username);
-
         alertwin.showAndWait();
     }
 
@@ -243,11 +237,9 @@ public class GameView {
      */
     public void ShowAlertLose() {
         this.stopClock();
-        rekordok.time.add(timeinsecond);
-        rekordok.score.add(game.getScore());
-        rekordok.username.add(game.username);
-        System.out.println(rekordok.score+" "+rekordok.username);
+
         alert.showAndWait();
+
 
     }
 

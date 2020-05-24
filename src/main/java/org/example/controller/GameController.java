@@ -46,7 +46,7 @@ public class GameController implements Initializable {
         this.username = username;
         game = new GameModell(username, this.nehezseg);
         game.setSpacing(5);
-
+        game.read();
 
     }
 
@@ -102,8 +102,8 @@ public class GameController implements Initializable {
      * Ha viszont nem lépünk aknára akkor a legvégén egy gratulációs üzenetet dob fel és ha kilépünk
      * belőle akkor szintén előlről kezdődik.
      *
-     * @param x mező sorszáma
-     * @param y mező oszlopszáma
+     * @param x koordináta
+     * @param y koordináta
      */
     public  void handlePrimaryClick(double x, double y) {
         mx = (int) x;
@@ -126,7 +126,9 @@ public class GameController implements Initializable {
                         if (game.getBombs(i, j)) {
                             gameView.DrawMines(i, j);
                         }
+                game.addToRekords(gameView.getTimeinsecond(),game.getScore(),game.username);
                 gameView.ShowAlertLose();
+                game.write();
                 restart();
                 Logger.info("Aknára klikkelt!");
                 gameView.stopClock();
@@ -149,7 +151,9 @@ public class GameController implements Initializable {
 
 
                     if (game.getREvealedcounter() > 100) {
+                        game.addToRekords(gameView.getTimeinsecond(),game.getScore(),game.username);
                         gameView.ShowAlertWin();
+                        game.write();
                        timeinsecond= gameView.getTimeinsecond();
                         restart();
                     }

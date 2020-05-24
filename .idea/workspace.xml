@@ -20,18 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1322cb7-9a73-4194-b6c6-624bfc8b25bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tinylog.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chekstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Test/org/example/modell/GameModellTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modell/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/view/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PrimaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modell/GameModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modell/GameModell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/tinylog.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/tinylog.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,8 @@
         <option value="AnnotationType" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -75,6 +76,8 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -83,16 +86,22 @@
     <property name="settings.editor.selected.configurable" value="Lombok plugin" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources" />
-      <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources\org\example" />
-      <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources\org\example\img" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.modell" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources" />
+      <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources\org\example" />
+      <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources\org\example\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -165,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="382" y="228" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590161234204" />
-    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1589987716108">
+    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1590330498649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589987716108" />
+    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590330498649" />
     <state x="1056" y="281" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590161169401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,22 +202,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="950" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590236736843" />
-    <state width="914" height="496" key="GridCell.Tab.0.bottom" timestamp="1590279626016">
+    <state width="914" height="196" key="GridCell.Tab.0.bottom" timestamp="1590337251212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="496" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590279626016" />
-    <state width="914" height="496" key="GridCell.Tab.0.center" timestamp="1590279626015">
+    <state width="914" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
+    <state width="914" height="196" key="GridCell.Tab.0.center" timestamp="1590337251212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="496" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590279626015" />
-    <state width="914" height="496" key="GridCell.Tab.0.left" timestamp="1590279626015">
+    <state width="914" height="196" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
+    <state width="914" height="196" key="GridCell.Tab.0.left" timestamp="1590337251212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="496" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590279626015" />
-    <state width="914" height="496" key="GridCell.Tab.0.right" timestamp="1590279626016">
+    <state width="914" height="196" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
+    <state width="914" height="196" key="GridCell.Tab.0.right" timestamp="1590337251212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="496" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590279626016" />
+    <state width="914" height="196" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -225,10 +234,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587220931789" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1590154539055">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1590332853556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590154539055" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590332853556" />
     <state x="587" y="84" width="1254" height="851" key="SettingsEditor" timestamp="1590277052015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,6 +262,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586261650679" />
+    <state x="281" y="188" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590336432010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="281" y="188" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590336432010" />
     <state x="431" y="187" key="new project wizard" timestamp="1590145569130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,6 +274,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="148" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586615985457" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1590330232894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590330232894" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586617358093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,6 +290,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/App.java</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/modell/GameModell.java</url>
+          <line>399</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -23,7 +23,7 @@ public class GameModell {
     }
 
     public String username;
-    private boolean[][] bombs;
+    public boolean[][] bombs;
     private int[][] neighbours;
     private  boolean[][] flagged;
     private boolean[][] revealed;
@@ -197,15 +197,18 @@ public class GameModell {
             revealed = new boolean[11][11];
             revealed1 = new boolean[11][11];
             int i = 1;
-
-            for (int row = 1; row <= 10; row++)
+            int q = 0;
+            for (int row = 1; row <= 10; row++) {
                 for (int collom = 1; collom <= 10; collom++) {
                     bombs[row][collom] = false;
                     flagged[row][collom] = false;
                     neighbours[row][collom] = 0;
                     revealed[row][collom] = false;
                     revealed1[row][collom] = false;
+
                 }
+
+            }
 
 
             while (i <= 10) {

@@ -20,17 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1322cb7-9a73-4194-b6c6-624bfc8b25bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chekstyle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Test/org/example/modell/GameModellTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modell/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/view/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/org/example/modell/GameModellTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Test/org/example/modell/GameModellTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modell/GameModell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modell/GameModell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/GameView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,12 +94,13 @@
       <recent name="org.example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src" />
       <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources" />
       <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources\org\example" />
       <recent name="C:\Users\ssgam\Documents\GitHub\Minesweeper\src\main\resources\org\example\img" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GameModellTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
@@ -122,9 +118,87 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameModellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.modell.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.modell" />
+      <option name="MAIN_CLASS_NAME" value="org.example.modell.GameModellTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameModellTest.BombGenerateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.modell.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.modell" />
+      <option name="MAIN_CLASS_NAME" value="org.example.modell.GameModellTest" />
+      <option name="METHOD_NAME" value="BombGenerateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameModellTest.inboxYTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.modell.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.modell" />
+      <option name="MAIN_CLASS_NAME" value="org.example.modell.GameModellTest" />
+      <option name="METHOD_NAME" value="inboxYTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameModellTest.set_to_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.modell.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.modell" />
+      <option name="MAIN_CLASS_NAME" value="org.example.modell.GameModellTest" />
+      <option name="METHOD_NAME" value="set_to_zero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameModellTest" />
+        <item itemvalue="JUnit.GameModellTest.inboxYTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.GameModellTest.set_to_zero" />
+        <item itemvalue="JUnit.GameModellTest.BombGenerateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -158,10 +232,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1584800639521" />
-    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1588344097605">
+    <state x="552" y="178" width="816" height="774" key="#Intentions" timestamp="1590341479751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1588344097605" />
+    <state x="552" y="178" width="816" height="774" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1590341479751" />
     <state x="381" y="189" key="#Project_Structure" timestamp="1587210487673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -170,6 +244,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="800" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590278108940" />
+    <state x="-221" y="202" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590343387781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-221" y="202" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590343387781" />
     <state x="382" y="228" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1590161234204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -202,22 +280,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="950" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590236736843" />
-    <state width="914" height="196" key="GridCell.Tab.0.bottom" timestamp="1590337251212">
+    <state width="914" height="196" key="GridCell.Tab.0.bottom" timestamp="1590345821572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
-    <state width="914" height="196" key="GridCell.Tab.0.center" timestamp="1590337251212">
+    <state width="914" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590345821572" />
+    <state width="914" height="196" key="GridCell.Tab.0.center" timestamp="1590345821572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="196" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
-    <state width="914" height="196" key="GridCell.Tab.0.left" timestamp="1590337251212">
+    <state width="914" height="196" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590345821572" />
+    <state width="914" height="196" key="GridCell.Tab.0.left" timestamp="1590345821572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="196" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
-    <state width="914" height="196" key="GridCell.Tab.0.right" timestamp="1590337251212">
+    <state width="914" height="196" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590345821572" />
+    <state width="914" height="196" key="GridCell.Tab.0.right" timestamp="1590345821572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="196" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590337251212" />
+    <state width="914" height="196" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590345821572" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587220931789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -266,6 +344,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="281" y="188" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590336432010" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1590344290898">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1590344290898" />
     <state x="431" y="187" key="new project wizard" timestamp="1590145569130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,8 +375,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/modell/GameModell.java</url>
-          <line>399</line>
+          <line>402</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test/org/example/modell/GameModellTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Test/org/example/modell/GameModellTest.java</url>
+          <line>73</line>
+          <properties class="org.example.modell.GameModellTest" method="inboxYTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

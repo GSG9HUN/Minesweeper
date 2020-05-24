@@ -1,0 +1,160 @@
+2020-05-24 02:20:27 [JavaFX Application Thread] org.example.App.start()
+INFO: Menü elindítva!
+2020-05-24 02:20:30 [JavaFX Application Thread] org.example.App.setRoot()
+INFO: secondary.fxml betöltve
+2020-05-24 02:20:31 [JavaFX Application Thread] org.example.modell.SecondaryModell.setUsername()
+INFO: username felhasználónév beállítva
+2020-05-24 02:20:31 [JavaFX Application Thread] org.example.modell.GameModell.BombGenerate()
+INFO: Aknák elhelyezése a pályán!
+2020-05-24 02:20:31 [JavaFX Application Thread] org.example.modell.GameModell.howmuchneighbour()
+INFO: Mezők aknásmezőkkel való szomszédainak meghatározása!
+2020-05-24 02:20:32 [JavaFX Application Thread] org.example.view.GameView.<init>()
+INFO: Pálya kirajzolása könnyű nehézségi szinthez!
+2020-05-24 02:20:32 [JavaFX Application Thread] org.example.App.setRoot()
+INFO: easy.fxml betöltve
+2020-05-24 02:20:32 [JavaFX Application Thread] org.example.controller.SecondaryController.startgame()
+INFO: Játék indítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.handlePrimaryClick()
+INFO: Óra elindult!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 1 1 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 1 2 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 1 3 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 1 4 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 1 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 1 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 1 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 2 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 2 4 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 2 3 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 2 2 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 2 1 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 1 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 1 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 2 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 2 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 3 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 4 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 2 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 2 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 3 10 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 10 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 5 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 5 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 5 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 5 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 5 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 6 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 6 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 6 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 6 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 6 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 5 10 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 6 10 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 7 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 7 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 7 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 7 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 7 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 6 4 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 7 4 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 8 4 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 8 5 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 8 6 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 8 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 8 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 8 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 9 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 9 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 9 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 10 7 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 10 8 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 10 9 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 7 10 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 8 10 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 4 Mező felfordítása!
+2020-05-24 02:20:33 [JavaFX Application Thread] org.example.controller.GameController.neighbour()
+INFO: 4 3 Mező felfordítása!
+2020-05-24 02:20:36 [JavaFX Application Thread] org.example.modell.GameModell.set_to_zero()
+INFO: Újra kezdés!
+2020-05-24 02:20:36 [JavaFX Application Thread] org.example.modell.GameModell.BombGenerate()
+INFO: Aknák elhelyezése a pályán!
+2020-05-24 02:20:36 [JavaFX Application Thread] org.example.modell.GameModell.howmuchneighbour()
+INFO: Mezők aknásmezőkkel való szomszédainak meghatározása!
+2020-05-24 02:20:36 [JavaFX Application Thread] org.example.controller.GameController.handlePrimaryClick()
+INFO: Aknára klikkelt!

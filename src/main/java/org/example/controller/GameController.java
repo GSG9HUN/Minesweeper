@@ -6,8 +6,8 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import org.example.view.GameView;
 import org.example.modell.GameModell;
+import org.example.view.GameView;
 import org.tinylog.Logger;
 
 import java.io.IOException;
@@ -168,7 +168,7 @@ public class GameController implements Initializable {
      *
      * @param x a mező sorszáma
      * @param y a mező oszlopszáma
-     * @return void
+     *
      */
     public void neighbour(int x, int y) {
 

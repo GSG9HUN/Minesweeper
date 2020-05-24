@@ -1,6 +1,5 @@
 package org.example.modell;
 
-
 import org.tinylog.Logger;
 
 import java.io.IOException;
@@ -24,14 +23,12 @@ public class GameModell {
     public int timer = 1;
     public int timercounter = 0;
     public int stop = 0;
-
     public int revealedcounter = 1;
     public boolean[][] revealed1;
 
     /**
      * Ez a metódus meghatározza azt, hogy egy adott mező mellett hány akna van.
      *
-     * @return void
      */
 
     public void howmuchneighbour() {
@@ -275,7 +272,8 @@ public class GameModell {
 
     /**
      * Ez a metódus azt nézi, hogy ahova klikkeltünk az melyik négyzetbe van ha benne van.
-     *
+     * @param mx x koordináta.
+     * @param my y koordináta.
      * @return visszaadja melyik sorba klikkeltünk.
      */
     public  int inboxX(int mx, int my) {
@@ -302,7 +300,8 @@ public class GameModell {
 
     /**
      * Ez a metódus azt nézi meg, hogy ahova klikkeltünk az benne van-e egy négyzetbe az y tengelyen.
-     *
+     * @param mx x koordináta.
+     * @param my y koordináta.
      * @return visszaadja azt h melyik oszlop az.
      */
     public  int inboxY(int mx, int my) {
